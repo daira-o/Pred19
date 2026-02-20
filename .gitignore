@@ -1,0 +1,58 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+notebooks/academic_notebook.ipynb
+#*.ipynb
+
+# MLflow runs and artifacts
+mlruns/
+
+# Data: ignore raw and processed CSVs and any CSV data files
+data/
+data/*.csv
+data/**/*.csv
+
+# Logs and databases
+*.log
+logs/
+*.sqlite3
+*.db
+
+# Packaging
+dist/
+build/
+*.egg-info/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env.local
+secrets.json
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv

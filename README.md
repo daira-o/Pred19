@@ -55,18 +55,18 @@ This repository represents a transition from research-oriented exploration to a 
 
 ## Project Structure (Work in Progress)
 
-
+```text
 PRED19/
 ├── notebooks/              # Original academic research and experiments
-├── src/                    # Modularized source code
+├── src/                    # [WIP] Modularized source code
 │   ├── preprocessing.py    # Data cleaning and imputation logic
-│   ├── features.py         # Feature engineering
+│   ├── features.py         # Feature engineering and encoding
 │   └── train.py            # Model training and serialization
-├── main.py                 # Pipeline orchestrator 
+├── main.py                 # [WIP] Pipeline orchestrator (Entry point)
 ├── pyproject.toml          # Project metadata and dependencies (managed via uv)
 ├── uv.lock                 # Reproducible lockfile for environment consistency
 └── README.md               # Project documentation
-
+```
 ---
 
 # Tech Stack

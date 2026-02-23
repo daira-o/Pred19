@@ -17,7 +17,6 @@ ENV/
 
 # Jupyter
 .ipynb_checkpoints
-notebooks/academic_notebook.ipynb
 #*.ipynb
 
 # MLflow runs and artifacts

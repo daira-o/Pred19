@@ -34,14 +34,47 @@ Models were evaluated to ensure clinical reliability:
 - **Performance Metrics**: Analysis based on Precision, Recall, and F1-Score (with a focus on Recall to minimize undiagnosed cases).
 - **Explainable AI (XAI)**: Implementation of **SHAP values** to provide both global insights into feature impact and local explanations for individual patient predictions.
 
+---
 
+## Project Evolution: From Research to Production
+
+This repository represents a transition from research-oriented exploration to a modular production-ready architecture.
+
+### Project Status
+
+1. **Phase 1: Research (Notebook) — COMPLETED**  
+   The `academic_notebook.ipynb` contains the full Exploratory Data Analysis (EDA), model benchmarking, and initial SHAP visualizations.
+
+2. **Phase 2: Modularization (Python Scripts) — IN PROGRESS**  
+   Refactoring core logic into decoupled Python scripts (`src/` directory) to improve maintainability and automate the pipeline execution.
+
+3. **Phase 3: MLOps Infrastructure — IN PROGRESS**  
+   Implementing `uv` for modern dependency management and preparing the environment for automated reproducibility and experiment tracking.
 
 ---
 
-## Tech Stack
-- **Language**: Python 3.12.12
-- **Core Libraries**: Pandas, NumPy, Scikit-Learn, XGBoost, SHAP.
-- **Environment**: Google Colab.
+## Project Structure (Work in Progress)
+
+```text
+PRED19/
+├── notebooks/              # Original academic research and experiments
+├── src/                    # Modularized source code
+│   ├── preprocessing.py    # Data cleaning and imputation logic
+│   ├── features.py         # Feature engineering
+│   └── train.py            # Model training and serialization
+├── main.py                 # Pipeline orchestrator 
+├── pyproject.toml          # Project metadata and dependencies (managed via uv)
+├── uv.lock                 # Reproducible lockfile for environment consistency
+└── README.md               # Project documentation
+
+---
+
+# Tech Stack
+
+- **Language:** Python 3.12.x
+- **Dependency Management:** uv (transitioning to fully reproducible environments)
+- **Core Libraries:** Scikit-Learn, XGBoost, SHAP, Pandas, NumPy
+- **Environment:** Developed in Google Colab (Research phase) and refactored for local execution
 
 ---
 

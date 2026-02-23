@@ -55,7 +55,7 @@ This repository represents a transition from research-oriented exploration to a 
 
 ## Project Structure (Work in Progress)
 
-```text
+
 PRED19/
 ├── notebooks/              # Original academic research and experiments
 ├── src/                    # Modularized source code

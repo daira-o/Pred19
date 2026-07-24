@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.venv/
+venv/
+.env
+
+# Clinical data and local uploads must never be committed.
+*.csv
+!artifacts/roc_curve.csv
+data/
+uploads/
+
+# Keep the Python data-preparation package; only repository-level datasets are ignored.
+!pred19/data/
+!pred19/data/*.py
+
+# Real inference files stay local. The synthetic demo may be versioned.
+inference/*.csv
+!inference/demo_synthetic.csv
+
+# The trained pipeline is deployment-managed and may be large.
+# Remove this line only when the approved model artifact is intentionally versioned.
+model/*.joblib
+!model/pred19_pipeline.joblib

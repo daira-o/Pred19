@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pred19"
+version = "0.3.0"
+description = "Clinical machine-learning prototype for COVID-19 risk estimation from laboratory observations."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+authors = [
+  { name = "PRED19 contributors" },
+]
+dependencies = [
+  "streamlit==1.59.2",
+  "pandas==2.3.3",
+  "numpy==2.5.1",
+  "scikit-learn==1.9.0",
+  "joblib==1.5.3",
+  "xgboost==3.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+]
+
+[project.scripts]
+pred19-prepare-data = "pred19.data.preparation:main"
+pred19-train-model = "pred19.modeling.training:main"
+
+[tool.setuptools.packages.find]
+include = ["pred19*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

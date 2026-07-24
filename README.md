@@ -1,5 +1,7 @@
 # PRED19 — COVID-19 Risk Estimation from Laboratory Data
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pred19.streamlit.app/)
+
 ## Overview
 
 PRED19 is a machine-learning-based clinical decision-support prototype designed to estimate COVID-19 risk from routinely collected laboratory observations. It validates six laboratory inputs, transforms them with the fitted preprocessing pipeline, and returns the XGBoost model's estimated probability for the positive class.
@@ -227,6 +229,14 @@ tests/                         Synthetic unit and application tests
 ```
 
 The real clinical source file and derived private CSVs remain under the Git-ignored `data/` directory.
+
+## Interactive demo
+
+**Live demo:** [pred19.streamlit.app](https://pred19.streamlit.app/)
+
+The Streamlit application is an optional presentation layer for exploring synthetic patient
+observations, reviewing the six model inputs, and displaying model outputs. It does not replace the
+model-development workflow or represent a clinical deployment.
 
 ## Acknowledgements
 
